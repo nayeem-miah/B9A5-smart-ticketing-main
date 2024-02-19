@@ -10,20 +10,16 @@ for (const sit of allSit) {
     else{
         alert('this buses sit fillap');
     }
-    // console.log(count)
+    
   });
 }
 
 let done = 0;
 const sitDone = document.getElementsByClassName("sit");
 for (const sit of sitDone) {
-  sit.addEventListener("click", function (element) {
+  sit.addEventListener("click", function () {
     done = done + 1;
-     
-    // const selectSit=document.getElementById()
-
-    // const clickSit=document.getElementById('click-sit').innerText=sitName;
-
+  
      setText("sit-done", done);
   });
 }
@@ -72,5 +68,6 @@ for (const btn of allBtn){
 function start(){
     HideElementById('home');
     showElementById('sender');
+    
     
 }
